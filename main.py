@@ -571,6 +571,13 @@ def main():
         else:
             st.info("Please enter OpenAI API key to enable AI features.")
 
+        st.markdown('<h4>📋 App Insights</h4>', unsafe_allow_html=True)
+        st.markdown("""
+        - **AI-Powered Contract Review**: Analyzes business contracts using specialized AI agents for clauses, risks, and benefits.
+        - **Interactive Chat Interface**: Ask questions about uploaded contracts for context-based, actionable insights.
+        - **Secure and User-Friendly**: Requires authentication and supports PDF uploads with a sleek, accessible UI. Not storing or save the PDFs.
+        """, unsafe_allow_html=True)
+
     if not st.session_state.get("agents_initialized", False):
         st.warning("AI Agents not initialized. Please provide OpenAI API key.")
         return
@@ -659,4 +666,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
