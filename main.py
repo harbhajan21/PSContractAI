@@ -8,7 +8,6 @@ import yfinance as yf
 from dotenv import load_dotenv
 import os
 from phi.knowledge.pdf import PDFUrlKnowledgeBase
-from phi.vectordb.pgvector import PgVector2
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
@@ -660,3 +659,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
